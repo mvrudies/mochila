@@ -1,0 +1,8 @@
+COMANDO DO GIT 
+• git init  				↛ Inicia um repositório
+• git add . 				↛ Adiciona todos os arquivos no repositório 
+• git commit -m 			↛ 'Comentario do commit' ↛ faz um commit
+• git checkout -b  			↛ Troca de branch e cria , caso não exista
+• git merge nomeDaBranch 	↛ Junta o branch com a atual 
+• git remote 				↛ Trata de repositorios em nuvem 
+• git push origin main 		↛ Empurra nossa branch para o Github

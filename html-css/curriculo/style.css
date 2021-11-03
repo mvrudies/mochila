@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+	height: 100vh;
+    display: flex;
+    flex-direction: row;
+    }
+
+#esquerdo {
+    margin: 2px;
+    padding: 3px;
+    align-items: center;
+    flex-direction: center;
+    width: 25%;
+    height: 100vh;
+    background-color: paleturquoise;
+    flex-direction: row;
+}    
+
+#direita {
+    width: 75%;
+    height: 100vh;
+    background-color: wheat;
+}
+
+img {
+    border-radius: 50%;
+    height: 200px;
+    width:  190px;
+}

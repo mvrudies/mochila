@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+header{
+    /*POSICIONAMENTO*/
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px ;
+    align-items: center;
+    /* DEMAIS ESTILIZAÇÕES*/
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Tahoma;
+}
+
+header #header-title{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+header nav .nav-item{
+    color: white;
+    transition: transform 150ms;
+    font-size: 20px;
+}
+header nav  .nav-item:hover{
+    color: crimson;
+    transform: scale(1.2);
+
+}
+
+    /*ANIMAÇÃO*/
+main #elemento{
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+
+    /*Posicionamento*/
+    position: relative;
+    top: 0px;
+    left: 00px;
+
+    /*Definição da Animação*/
+    animation-name: animacao-elemento;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+}
+
+@keyframes animacao-elemento{
+    0%{
+    background-color:red;
+    left: 0px;
+    }
+    55%{
+    left: 500px;
+    top: 500%;
+    transform: rotate(360deg);
+    }
+    100%{
+    background-color: blue;
+    left: 1000px;    
+    }
+}

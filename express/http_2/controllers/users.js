@@ -1,3 +1,5 @@
+const { response } = require("../app")
+
 function trazerDados(req,res){
     //controler
     res.send('Ok, minha rota retornou isso ')
@@ -38,9 +40,14 @@ function deletarDados(req,res){
     res.send('REGISTRO DELETADO')
 }
 
+function uploadArquivo(req,res){
+    res.send('Upload realizado')
+}
+
 module.exports={
     trazerDados,
     inserirDados,
     alterardados,
-    deletarDados
+    deletarDados,
+    uploadArquivo
 }

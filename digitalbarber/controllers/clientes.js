@@ -1,11 +1,12 @@
-function rederizaListaCliente(req,res,next){
-    res.render('listagemClientes')
+function renderizaListaCliente(req, res, next) {
+    res.render('listagemCliente')
 }
-function rederizaCadastroCliente(req,res,next){
+
+function renderizaCadastroCliente(req, res, next) {
     res.render('formularioCliente')
 }
 
-module.exports ={
-        rederizaListaCliente,
-        rederizaCadastroCliente
+module.exports = {
+    renderizaListaCliente,
+    renderizaCadastroCliente
 }

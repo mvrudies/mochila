@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-var {rederizaCadastroCliente,rederizaListaCliente } = require('../controllers/clientes')
+var { renderizaListaCliente, renderizaCadastroCliente } = require('../controllers/clientes')
 
-router.get('/', rederizaListaCliente);
-router.get('/cadastro', rederizaCadastroCliente)
+router.get('/', renderizaListaCliente);
+
+router.get('/cadastro', renderizaCadastroCliente);
 
 module.exports = router;

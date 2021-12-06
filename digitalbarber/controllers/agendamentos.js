@@ -1,14 +1,12 @@
-function renderizaListaAgendamento(req,res,next){
-    res.render("listagemAgendamento")
+function renderizaListaAgendamento(req, res, next) {
+    res.render('listagemAgendamento')
 }
 
-
-function renderizaCadastroAgendamento(req,res,next){
-    res.render("formularioAgendamento")
+function renderizaCadastroAgendamento(req, res, next) {
+    res.render('formularioAgendamento')
 }
 
 module.exports = {
-
-    renderizaCadastroAgendamento,
-    renderizaListaAgendamento
+    renderizaListaAgendamento,
+    renderizaCadastroAgendamento
 }

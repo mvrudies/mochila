@@ -44,3 +44,20 @@ githubAPI.get('users/mvrudies').then(resultado => {
     console.log('O resultado da requisição é :', resultado.data)
 
 })
+
+
+
+// API EXTERNA VIACEP
+
+const apiCEP = axios.create({
+    baseURL: "https://viacep.com.br/ws."
+})
+
+apiCEP.get('06220060/json')
+    .then(resultadocep =>{
+            console.log('O longadouro referente ao CEP é', resultadocep.data.longadouro)
+    })
+    .catch(erro =>{
+        console.log('Houve um erro de requisição',erro)
+    })
+
